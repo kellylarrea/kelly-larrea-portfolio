@@ -1,0 +1,41 @@
+.screens {
+    background-color: #fbeceb;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+        .container{
+            width: 100vw;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: snow;
+
+
+            .item{
+                width: 700px;
+                height: 100%;
+                background-color: white;
+                border-radius: 20px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                .left{
+                    flex: 6;
+                    height:100%;
+                    background-color: yellowgreen;
+                }
+                .right{
+                    flex: 8;
+                    height: 100%;
+                    background: yellow;
+
+
+                }
+
+            }
+        }
+
+    }
