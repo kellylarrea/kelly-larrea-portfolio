@@ -1,4 +1,4 @@
-import React from 'react';
+import {useState} from 'react';
 import './mywork.scss'
 import { styled } from '@mui/material/styles';
 import Card from '@mui/material/Card';
@@ -6,141 +6,111 @@ import CardHeader from '@mui/material/CardHeader';
 import CardMedia from '@mui/material/CardMedia';
 import CardContent from '@mui/material/CardContent';
 import CardActions from '@mui/material/CardActions';
-import Collapse from '@mui/material/Collapse';
 import Avatar from '@mui/material/Avatar';
 import IconButton from '@mui/material/IconButton';
 import Typography from '@mui/material/Typography';
 import { red } from '@mui/material/colors';
 import ShareIcon from '@mui/icons-material/Share';
-import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import MoreVertIcon from '@mui/icons-material/MoreVert';
 import GitHubIcon from '@mui/icons-material/GitHub';
 
 
-const ExpandMore = styled((props) => {
-  const { expand, ...other } = props;
-  return <IconButton {...other} />;
-})(({ theme, expand }) => ({
-  transform: !expand ? 'rotate(0deg)' : 'rotate(180deg)',
-  marginLeft: 'auto',
-  transition: theme.transitions.create('transform', {
-    duration: theme.transitions.duration.shortest,
-  }),
-}));
-
 export default function MyWork() {
-  const [expanded, setExpanded] = React.useState(false);
 
-  const handleExpandClick = () => {
-    setExpanded(!expanded);
-  };
+const [github, setGithub] = useState('github')
+const [link, setLink] = useState('link')
 
+const data = [
+  {
+    id: 1,
+    name: "Helping Hand App",
+    img: 'assets/helping.png',
+    desc: 'A full stack MERN application built with the community in mind',
+    link: 'https://helping-hands-sei.herokuapp.com/', 
+    github: ['https://github.com/kellylarrea/Helping-Hand-React', 'https://github.com/kellylarrea/Helping-Hand-Express']
+  },
+  {
+    id: 2,
+    name: "Primal Recipe Collector",
+    img: 'assets/primal.png',
+    desc: 'a PEN stack web application built to collect keto and paleo recipes from all over the internet',
+    link: 'https://express-auth-reference.herokuapp.com/',
+    github: 'https://github.com/kellylarrea/primal_recipes',
 
-  const data = [
-    {
-        id: 1,
-        name: "Helping Hand App",
-        img: 'assets/helping.png',
-        desc: 'A full stack MERN application built with the community in mind',
-    },
-    {
-        id: 2,
-        name: "Primal Recipe Collector",
-        img: 'assets/primal.png',
-        desc: 'a PEN stack web application built to collect keto and paleo recipes from all over the internet',
-        // featured: true,
+  },
+  {
+    id: 3,
+    name: "Pawsibly",
+    img: 'assets/pawsibly.png',
+    desc: ' Implemented the Django REST framework to create a web API to find local pet sitters.',
+    link: '',
+    github: ['https://github.com/kellylarrea/pawsibly-react', 'https://github.com/kellylarrea/pawsibly-django']
+  },
 
-    },
-    {
-        id: 3,
-        name: "Pawsibly",
-        img: 'assets/pawsibly.png' ,
-        desc: ' Implemented the Django REST framework to create a web API to find local pet sitters.'
-    },
-    
 ]
 
-  return (
-  <div className='myWork' id='mywork'>
-    <h1>My Work</h1>
-    <div className='container'>
-      {data.map((d)=>(
-      <div className={d.featured ? 'card featured' : 'card'}>
-        <Card sx={{ maxWidth: 345 }}>
-      <CardHeader
-        avatar={
-          <Avatar sx={{ bgcolor: red[500] }} aria-label="recipe">
-            MW
-          </Avatar>
-        }
-        action={
-          <IconButton aria-label="settings">
-            <MoreVertIcon />
-          </IconButton>
-        }
-        title={d.name}
-      />
-      <CardMedia
-        component="img"
-        height="194"
-        image={d.img}
-        alt=""
-      />
-      <CardContent>
-        <Typography variant="body2" color="text.secondary">
-      {d.desc}
-        </Typography>
-      </CardContent>
-      <CardActions disableSpacing>
-        <IconButton aria-label="add to favorites">
-          <GitHubIcon />
-        </IconButton>
-        <IconButton aria-label="share">
-          <ShareIcon />
-        </IconButton>
-        <ExpandMore
-          expand={expanded}
-          onClick={handleExpandClick}
-          aria-expanded={expanded}
-          aria-label="show more"
-        >
-          <ExpandMoreIcon />
-        </ExpandMore>
-      </CardActions>
-      <Collapse in={expanded} timeout="auto" unmountOnExit>
-        <CardContent>
-          <Typography paragraph>Method:</Typography>
-          <Typography paragraph>
-            Heat 1/2 cup of the broth in a pot until simmering, add saffron and set
-            aside for 10 minutes.
-          </Typography>
-          <Typography paragraph>
-            Heat oil in a (14- to 16-inch) paella pan or a large, deep skillet over
-            medium-high heat. Add chicken, shrimp and chorizo, and cook, stirring
-            occasionally until lightly browned, 6 to 8 minutes. Transfer shrimp to a
-            large plate and set aside, leaving chicken and chorizo in the pan. Add
-            pimentón, bay leaves, garlic, tomatoes, onion, salt and pepper, and cook,
-            stirring often until thickened and fragrant, about 10 minutes. Add
-            saffron broth and remaining 4 1/2 cups chicken broth; bring to a boil.
-          </Typography>
-          <Typography paragraph>
-            Add rice and stir very gently to distribute. Top with artichokes and
-            peppers, and cook without stirring, until most of the liquid is absorbed,
-            15 to 18 minutes. Reduce heat to medium-low, add reserved shrimp and
-            mussels, tucking them down into the rice, and cook again without
-            stirring, until mussels have opened and rice is just tender, 5 to 7
-            minutes more. (Discard any mussels that don’t open.)
-          </Typography>
-          <Typography>
-            Set aside off of the heat to let rest for 10 minutes, and then serve.
-          </Typography>
-        </CardContent>
-      </Collapse>
-    </Card>
+  // const gitHandleClick = () => {
+  //   let locs =['https://github.com/kellylarrea/pawsibly-react', 'https://github.com/kellylarrea/pawsibly-django']
+  //   // console.log('data.github', data.github[0])
+  //   for (let i = 0; i < locs.length; i++) {
+	// 			window.open(locs[i])}
+  //   }
+
+  // const appHandleClick = () => {
+  //   let appLocs = setLink(data)
+  // 	window.open(appLocs)
+  //   }
+  
+  
     
+
+  return (
+    <div className='myWork' id='mywork'>
+      <h1>My Work</h1>
+      <div className='container'>
+        {data.map((d) => (
+          <div className={d.featured ? 'card featured' : 'card'}>
+            <Card sx={{ maxWidth: 345 }}>
+              <CardHeader
+                avatar={
+                  <Avatar sx={{ bgcolor: red[500] }} aria-label="recipe">
+                    
+                  </Avatar>
+                }
+                action={
+                  <IconButton aria-label="settings">
+                    <MoreVertIcon />
+                  </IconButton>
+                }
+                title={d.name}
+              />
+              <CardMedia
+                component="img"
+                height="194"
+                image={d.img}
+                alt=""
+              />
+              <CardContent>
+                <Typography variant="body2" color="text.secondary">
+                  {d.desc}
+                </Typography>
+              </CardContent>
+              <CardActions disableSpacing>
+              <a href={d.github}>
+                <IconButton aria-label="my github link">
+                  <GitHubIcon />
+                </IconButton>
+                </a>
+                <a href={d.link}>
+                <IconButton aria-label="share">
+                  <ShareIcon />
+                </IconButton>
+                </a>
+              </CardActions>
+            </Card>
+          </div>
+        ))}
       </div>
-       ))}
     </div>
-  </div>
   )
 }
