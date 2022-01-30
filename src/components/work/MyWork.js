@@ -49,7 +49,6 @@ export default function MyWork() {
   return (
     <div className='myWork' id='mywork'>
       <h1>My Work</h1>
-
       <div className='container'>
         {data.map((d) => (
           <div className={d.featured ? 'card featured' : 'card'}>
