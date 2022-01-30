@@ -7,6 +7,7 @@ import CardContent from '@mui/material/CardContent';
 import CardActions from '@mui/material/CardActions';
 
 import Typography from '@mui/material/Typography';
+import { color } from '@mui/system';
 
 
 
@@ -68,13 +69,13 @@ export default function MyWork() {
                 </Typography>
                 <CardActions>
                 <a href={d.frontend} target='blank'>
-                  <Button size="small">Frontend</Button>
+                  <Button style={{ color: '#eb5949' }} size="small">Frontend</Button>
                 </a>
                 <a href={d.backend} target='blank'>
-                  <Button size="small">Backend</Button>
+                  <Button style={{ color: '#eb5949' }} size="small">Backend</Button>
                 </a>
                 <a href={d.link} target='blank'>
-                  <Button size="small">Demo</Button>
+                  <Button style={{ color: '#eb5949' }} size="small">Demo</Button>
                 </a>
               </CardActions>
                 <Typography variant="body2" color="text.secondary">
