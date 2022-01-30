@@ -1,7 +1,7 @@
 @import '../../global.scss';
 
 .intro{
-    background-color: #fbeceb;
+    background-color: $mainLightBlueColor;
     display: flex;
 
     @include mobile{
@@ -16,9 +16,9 @@
 
 
         .imgContainer {
-                  padding: 200px;
+                  padding: 100px;
             width: 700px;
-            height: 550px;
+            height: 450px;
             display: flex;
             align-items: flex-end;
             justify-content: center;
@@ -75,7 +75,7 @@
 
                 span{
                     font-size: inherit;
-                    color: #e63f2c;
+                    color: $mainYellowColor;
                 }
                 .ityped-cursor{
                     animation: blink 1s infinite;

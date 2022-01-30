@@ -1,19 +1,22 @@
 import {useEffect, useState} from 'react';
 import './portfolio.scss'
 import PortfolioList from '../portfolioList/PortfolioList'
-import { technologies, resume } from '../../data';
+import { frontend, backend } from '../../data';
+
+
 
 export default function Portfolio() {
   const [selected, setSelected] = useState('featured')
   const [data, setData] = useState([])
+
   const list = [
     {
-      id: 'technologies',
-      title: 'Technologies',
+      id: 'frontend',
+      title: 'Frontend',
     },
     {
-      id:'resume',
-      title: 'Resume',
+      id:'backend',
+      title: 'Backend',
     },
     
   ];
@@ -21,15 +24,13 @@ export default function Portfolio() {
   useEffect(()=>{
 
     switch(selected){
-      case 'technologies':
-        setData(technologies);
+      case 'frontend':
+        setData(frontend);
         break;
-        case 'resume':
-        setData(resume);
+        case 'backend':
+        setData(backend);
         break;
-
     }
-
   }, [selected])
 
   return (
@@ -43,6 +44,7 @@ export default function Portfolio() {
        setSelected={setSelected}
        id={item.id}
        />
+
      ))}
     </ul>
     <div className='container'>
@@ -50,11 +52,13 @@ export default function Portfolio() {
         <div className='item'>
           <img
             src={d.img}
-            alt=''
+            alt='technology image'
 />
 <h3>{d.title}</h3>
 </div>
       ))}
+    </div>
+    <div>
     </div>
   </div>
   )

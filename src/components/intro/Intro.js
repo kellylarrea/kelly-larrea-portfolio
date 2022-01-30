@@ -12,14 +12,14 @@ export default function Intro() {
       showCursor: true,
       backDelay: 1500,
       backSpeed: 60,
-      strings: [ 'My Hobby. ', 'My Portfolio. ', 'My Story. ', 'My Passion. ']
+      strings: [ 'My Hobby. ', 'My Portfolio. ', 'My Work. ', 'My Passion. ']
     })
   }, [])
 
   return <div className='intro' id='intro'>
     <div className='left'>
       <div className='imgContainer'>
-        <img src='assets/software.png' alt=''></img>
+        <img src='assets/item3.png' alt='intro image'></img>
       </div>
     </div>
     <div className='right'>

@@ -1,98 +1,98 @@
-@import '../../global.scss';
+// @import '../../global.scss';
 
 
-.contact{
-    background-color: #fbeceb;
-    display: flex;
+// .contact{
+//     background-color: snow;
+//     display: flex;
 
-    @include mobile{
-        flex-direction: column;
+//     @include mobile{
+//         flex-direction: column;
 
-    }
+//     }
 
-    .left{
-        flex: 1;
-        overflow: hidden;
+//     .left{
+//         flex: 1;
+//         overflow: hidden;
 
-        @include mobile{
-            width: 400px;
-            justify-content: center;
+//         @include mobile{
+//             width: 400px;
+//             justify-content: center;
 
            
-          }
-        img{
-            height: 100%;
-            width: 100%;
+//           }
+//         img{
+//             height: 100%;
+//             width: 100%;
 
-            @include mobile{
-                margin-left: 10px;
+//             @include mobile{
+//                 margin-left: 10px;
               
 
            
-        }
-    }
-}
-    .right{
-        flex: 1;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
+//         }
+//     }
+// }
+//     .right{
+//         flex: 1;
+//         display: flex;
+//         flex-direction: column;
+//         align-items: center;
+//         justify-content: center;
 
-        h2{
-            font-size: 30px;
-        }
+//         h2{
+//             font-size: 30px;
+//         }
 
-        form{
-            width: 70%;
-            height: 70%;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: space-around;
+//         form{
+//             width: 70%;
+//             height: 70%;
+//             display: flex;
+//             flex-direction: column;
+//             align-items: center;
+//             justify-content: space-around;
 
-            input{
-                width: 300px;
-                height: 30px;
-                font-size: 14px;
+//             input{
+//                 width: 300px;
+//                 height: 30px;
+//                 font-size: 14px;
 
-                @include mobile{
-                    width: 200px;
-                    height: 20px;
-                }
-            }
+//                 @include mobile{
+//                     width: 200px;
+//                     height: 20px;
+//                 }
+//             }
 
-            textarea{
-                width: 300px;
-                height: 200px;
-                font-size: 14px;
+//             textarea{
+//                 width: 300px;
+//                 height: 200px;
+//                 font-size: 14px;
 
                 
-                @include mobile{
-                    width: 200px;
-                    height: 100px;
-                }
+//                 @include mobile{
+//                     width: 200px;
+//                     height: 100px;
+//                 }
                 
-            }
+//             }
 
-            button {
-                width: 150px;
-                height: 30px;
-                color: white;
-                background-color: #e63f2c;
-                border: none;
-                border-radius: 10px; 
-                font-weight: 500;
-                cursor: pointer;
+//             button {
+//                 width: 150px;
+//                 height: 30px;
+//                 color: white;
+//                 background-color: #e63f2c;
+//                 border: none;
+//                 border-radius: 10px; 
+//                 font-weight: 500;
+//                 cursor: pointer;
 
-                &:focus{
-                    outline:none;
-                }
-            }
+//                 &:focus{
+//                     outline:none;
+//                 }
+//             }
 
-            span {
-                color: #e63f2c;
-            }
-        }
-    }
-}
+//             span {
+//                 color: #e63f2c;
+//             }
+//         }
+//     }
+// }

@@ -1,8 +1,14 @@
-.screens {
-    background-color: #fbeceb;
+@import '../../global.scss';
+
+.aboutme {
+    background-color: $mainLightBlueColor;
     display: flex;
     align-items: center;
     justify-content: center;
+    
+   
+   
+    
 
 
         .container{

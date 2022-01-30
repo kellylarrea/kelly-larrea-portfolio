@@ -1,4 +1,4 @@
-export const technologies = [
+export const frontend = [
     {
         id: 1,
         title: "React.js",
@@ -34,46 +34,41 @@ export const technologies = [
     },
     {
         id: 7,
-        title: "node.js",
-        img: 'assets/node.png' ,
-    },
-    {
-        id: 8,
-        title: "Python",
-        img: 'assets/python.png' ,
-    },
-    {
-        id: 9,
-        title: "Django",
-        img: 'assets/django.png' ,
-    },
-    {
-        id: 10,
-        title: "PostgresSQL",
-        img: 'assets/postgres.png' ,
-    },
-    {
-        id: 11,
-        title: "MongoDB",
-        img: 'assets/mongodb.png' ,
-    },
-    {
-        id: 12,
         title: "VSCode",
         img: 'assets/vscode.png' ,
     },
     {
-        id: 13,
+        id: 8,
         title: "Git",
         img: 'assets/git.png' ,
     },
    
 ]
 
-export const resume = [
+export const backend = [
     {
         id: 1,
-        title: "My Resume",
-        img: 'assets/resume.png' ,
+        title: "node.js",
+        img: 'assets/node.png' ,
     },
+    {
+        id: 2,
+        title: "Python",
+        img: 'assets/python.png' ,
+    },
+    {
+        id: 3,
+        title: "Django",
+        img: 'assets/django.png' ,
+    },
+    {
+        id: 4,
+        title: "PostgresSQL",
+        img: 'assets/postgres.png' ,
+    },
+    {
+        id: 5,
+        title: "MongoDB",
+        img: 'assets/mongodb.png' ,
+    }
 ]

@@ -1,5 +1,9 @@
 import React from 'react';
 import './menu.scss'
+import { Button } from '@mui/material';
+import { red } from '@mui/material/colors';
+import GitHubIcon from '@mui/icons-material/GitHub';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
 
 export default function Menu({menuOpen, setMenuOpen}) {
   return (
@@ -9,16 +13,26 @@ export default function Menu({menuOpen, setMenuOpen}) {
              <a href='#intro'>Home</a>
          </li>
          <li onClick={(() =>setMenuOpen(false))}>
-             <a href='#portfolio'>Portfolio</a>
+             <a href='#mywork'>My Work</a>
          </li>
          <li onClick={(() =>setMenuOpen(false))}>
-             <a href='#screens'>Screens</a>
+             <a href='#portfolio'>Technologies</a>
+         </li>
+         <li onClick={(() =>setMenuOpen(false))}>
+             <a href='#screens'>About Me</a>
          </li >
          <li onClick={(() =>setMenuOpen(false))}>
-             <a href='#resume'>Resume</a>
-         </li>
+      <a href='assets/software.pdf' target='blank'>
+       Resume
+      </a>
+         </li >
          <li onClick={(() =>setMenuOpen(false))}>
-             <a href='#contact'>Contact</a>
+      <a href='https://github.com/kellylarrea?tab=repositories' target='blank'>
+       <GitHubIcon/>
+      </a>
+      <a href='https://www.linkedin.com/in/kellylarrea/' target='blank'>
+    <LinkedInIcon />
+      </a>
          </li>
       </ul>
   </div>

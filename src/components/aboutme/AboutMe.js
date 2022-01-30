@@ -1,9 +1,12 @@
 
-import './screen.scss'
+import './aboutme.scss'
 import Container from '@mui/material/Container';
 import * as React from 'react';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import Typography from '@mui/material/Typography';
+
+import { Button } from '@mui/material';
+import { red } from '@mui/material/colors';
 
 const theme = createTheme();
 
@@ -33,9 +36,10 @@ theme.typography.h1 = {
   },
 };
 
-export default function Screens() {
+export default function AboutMe() {
   return (
-  <div className='screens' id='screens'>
+
+  <div className='aboutme' id='aboutme'>
     <Container maxwidth='small'>
       <ThemeProvider theme={theme}>
           <Typography>
@@ -51,7 +55,15 @@ export default function Screens() {
             </div>
             </Typography>
             </ThemeProvider>
+           <br></br>
+            <div>
+      
+      <Button sx={{ color: red[500] }} variant="outlined" href='assets/software.pdf' target='blank'>
+       Check out my Resume
+      </Button>
+      </div>
             </Container>
+
 
       </div>
   )
