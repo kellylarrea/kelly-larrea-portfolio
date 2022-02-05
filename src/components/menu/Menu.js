@@ -19,7 +19,7 @@ export default function Menu({menuOpen, setMenuOpen}) {
              <a href='#portfolio'>Technologies</a>
          </li>
          <li onClick={(() =>setMenuOpen(false))}>
-             <a href='#screens'>About Me</a>
+             <a href='#aboutme'>About Me</a>
          </li >
          <li onClick={(() =>setMenuOpen(false))}>
       <a href='assets/software.pdf' target='blank'>
@@ -28,7 +28,7 @@ export default function Menu({menuOpen, setMenuOpen}) {
          </li >
          <li onClick={(() =>setMenuOpen(false))}>
       <a href='https://github.com/kellylarrea?tab=repositories' target='blank'>
-       <GitHubIcon/>
+       <GitHubIcon />
       </a>
       <a href='https://www.linkedin.com/in/kellylarrea/' target='blank'>
     <LinkedInIcon />
