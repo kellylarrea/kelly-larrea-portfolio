@@ -4,7 +4,6 @@ import Container from '@mui/material/Container';
 import * as React from 'react';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import Typography from '@mui/material/Typography';
-
 import { Button } from '@mui/material';
 import { red } from '@mui/material/colors';
 
@@ -58,7 +57,7 @@ export default function AboutMe() {
            <br></br>
             <div>
       
-      <Button sx={{ color: red[500] }} variant="outlined" href='assets/software1.pdf' target='blank'>
+      <Button sx={{ color: red[500] }} variant="outlined" href='assets/software.pdf' target='blank'>
        Check out my Resume
       </Button>
       </div>

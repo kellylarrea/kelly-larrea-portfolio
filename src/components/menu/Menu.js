@@ -1,7 +1,5 @@
 import React from 'react';
 import './menu.scss'
-import { Button } from '@mui/material';
-import { red } from '@mui/material/colors';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 
@@ -22,7 +20,7 @@ export default function Menu({menuOpen, setMenuOpen}) {
              <a href='#aboutme'>About Me</a>
          </li >
          <li onClick={(() =>setMenuOpen(false))}>
-      <a href='assets/software1.pdf' target='blank'>
+      <a href='assets/software.pdf' target='blank'>
        Resume
       </a>
          </li >

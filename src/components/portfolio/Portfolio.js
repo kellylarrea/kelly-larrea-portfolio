@@ -11,7 +11,7 @@ export default function Portfolio() {
 
   const list = [
     {
-      id: 'frontend',
+      id: 'featured',
       title: 'Frontend',
     },
     {
@@ -24,12 +24,14 @@ export default function Portfolio() {
   useEffect(()=>{
 
     switch(selected){
-      case 'frontend':
+      case 'featured':
         setData(frontend);
         break;
         case 'backend':
         setData(backend);
         break;
+        default:
+          setImmediate(frontend);
     }
   }, [selected])
 
