@@ -22,7 +22,7 @@ export default function Menu({menuOpen, setMenuOpen}) {
              <a href='#aboutme'>About Me</a>
          </li >
          <li onClick={(() =>setMenuOpen(false))}>
-      <a href='assets/software.pdf' target='blank'>
+      <a href='assets/software1.pdf' target='blank'>
        Resume
       </a>
          </li >

@@ -58,7 +58,7 @@ export default function AboutMe() {
            <br></br>
             <div>
       
-      <Button sx={{ color: red[500] }} variant="outlined" href='assets/software.pdf' target='blank'>
+      <Button sx={{ color: red[500] }} variant="outlined" href='assets/software1.pdf' target='blank'>
        Check out my Resume
       </Button>
       </div>
