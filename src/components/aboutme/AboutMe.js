@@ -6,6 +6,8 @@ import { createTheme, ThemeProvider } from '@mui/material/styles';
 import Typography from '@mui/material/Typography';
 import { Button } from '@mui/material';
 import { red } from '@mui/material/colors';
+import Pdf from '../../software.pdf'
+
 
 const theme = createTheme();
 
@@ -57,7 +59,7 @@ export default function AboutMe() {
            <br></br>
             <div>
       
-      <Button sx={{ color: red[500] }} variant="outlined" href='assets/software.pdf' target='blank'>
+      <Button sx={{ color: red[500] }} variant="outlined" href={Pdf} target='blank'>
        Check out my Resume
       </Button>
       </div>

@@ -2,6 +2,7 @@ import React from 'react';
 import './menu.scss'
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import Pdf from '../../software.pdf'
 
 export default function Menu({menuOpen, setMenuOpen}) {
   return (
@@ -20,7 +21,7 @@ export default function Menu({menuOpen, setMenuOpen}) {
              <a href='#aboutme'>About Me</a>
          </li >
          <li onClick={(() =>setMenuOpen(false))}>
-      <a href='assets/software.pdf' target='blank'>
+      <a href={Pdf} target='blank'>
        Resume
       </a>
          </li >
