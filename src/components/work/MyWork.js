@@ -36,7 +36,7 @@ export default function MyWork() {
       name: "Pawsibly",
       img: 'assets/pawsibly.png',
       desc: ' Implemented the Django REST framework to create a web API to find local pet sitters for the community.',
-      link: 'https://pawsibly-demo.herokuapp.com/',
+      link: 'https://pawsibly.herokuapp.com/',
       frontend: 'https://github.com/kellylarrea/pawsibly-react',
       backend: 'https://github.com/kellylarrea/pawsibly-django'
     },
